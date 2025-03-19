@@ -5,8 +5,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height */
-  width: 100vw; /* Full viewport width */
+  height: 1920px; /* Full viewport height */
+  width: 1080px; /* Full viewport width */
   background-color: #000;
   overflow: hidden;
 }
@@ -17,7 +17,7 @@ body {
   position: absolute; /* Make containers overlap */
   top: 0;
   left: 0;
-  width: 100%; /* Full width */
+  width: auto; /* Full width */
   height: 100%; /* Full height */
   display: flex;
   justify-content: center;
@@ -35,7 +35,7 @@ body {
 
 /* Iframe Styling */
 iframe {
-  width: 100%; /* Full width */
+  width: auto; /* Full width */
   height: 100%; /* Full height */
   border: none;
 }
@@ -49,7 +49,7 @@ iframe {
 @media (orientation: portrait) {
   /* Ensure video and PDF take up full screen in portrait mode */
   iframe {
-    width: 100vw;
-    height: 100vh;
+    width: auto;
+    height: 1920px;
   }
 }
