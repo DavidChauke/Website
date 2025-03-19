@@ -5,8 +5,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1920px; /* Full viewport height */
-  width: 1080px; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
   background-color: #000;
   overflow: hidden;
 }
@@ -15,10 +15,11 @@ body {
 #video-container,
 #pdf-container {
   position: absolute; /* Make containers overlap */
-  top: 0;
-  left: 0;
-  width: auto; /* Full width */
-  height: 100%; /* Full height */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the containers */
+  width: 1080px; /* Fixed width for 1080px */
+  height: 1920px; /* Fixed height for 1920px */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,22 +36,22 @@ body {
 
 /* Iframe Styling */
 iframe {
-  width: auto; /* Full width */
-  height: 100%; /* Full height */
+  width: 100%; /* Full width of container */
+  height: 100%; /* Full height of container */
   border: none;
 }
 
 /* PDF Container Styling */
 #pdf-container {
-  padding-top : 600px;
   background-color: #fff; /* White background for PDF */
 }
 
 /* Media Query for Mobile Devices */
-@media (orientation: portrait) {
-  /* Ensure video and PDF take up full screen in portrait mode */
-  iframe {
-    width: auto;
-    height: 1920px;
+@media (max-width: 1080px) {
+  /* Adjust for smaller screens */
+  #video-container,
+  #pdf-container {
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
   }
 }
