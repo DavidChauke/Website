@@ -42,6 +42,7 @@ iframe {
 
 /* PDF Container Styling */
 #pdf-container {
+  padding-top : 600px;
   background-color: #fff; /* White background for PDF */
 }
 
