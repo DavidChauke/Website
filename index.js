@@ -12,5 +12,5 @@ window.onload = () => {
     videoContainer.style.visibility = 'hidden';
     pdfContainer.style.opacity = '1';
     pdfContainer.style.visibility = 'visible';
-  }, 1000);  // 3000ms = 3 seconds
+  }, 2000);  // 3000ms = 3 seconds
 };
