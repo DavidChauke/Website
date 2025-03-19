@@ -51,6 +51,7 @@ iframe {
   /* Adjust for smaller screens */
   #video-container,
   #pdf-container {
+    padding-top: 500px;
     width: 100vw; /* Full viewport width */
     height: 100vh; /* Full viewport height */
   }
